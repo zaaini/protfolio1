@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Developer Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/progress.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/education.css">
+    <link rel="stylesheet" href="../css/skills.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">Portfolio</span>
+                    <span class="logo-separator">|</span>
+                    <span class="logo-name">Zain</span>
+                    <div class="logo-dot"></div>
+                </div>
+                <span class="premium-logo-badge">
+                    <i class="fas fa-code"></i>
+                </span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-house-user"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#education" class="nav-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-code-branch"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <button class="nav-toggle">
+                <span class="premium-badge">PRO</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="title-wrapper">
+                        <span class="pre-title">👋 Hi, I'm</span>
+                        <h1 class="hero-title">Zain Ul Abideen</h1>
+                        <p class="hero-role">Android Developer</p>
+                    </div>
+                    <p class="hero-subtitle">Transforming Ideas into Intelligent Solutions</p>
+                    <div class="hero-description">
+                        I  am skilled Android developer with expertise in Java and Kotlin.
+                        Passionate about creating user-friendly and efficient mobile
+                        applications, I focus on writing clean, maintainable code and
+                        implementing modern development practices. Always eager to learn
+                        and adapt, I strive to enhance my skills and stay updated with the latest
+                        industry trends
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-icon" data-tooltip="Java">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-java" style="color: #007396;"></i>
+                            </div>
+                            <span class="icon-name">Java</span>
+                        </div>
+                        <div class="tech-icon" data-tooltip="Kotlin">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-android" style="color: #7F52FF;"></i>
+                            </div>
+                            <span class="icon-name">Kotlin</span>
+                        </div>
+                        <div class="tech-icon" data-tooltip="Android">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-android" style="color: #3DDC84;"></i>
+                            </div>
+                            <span class="icon-name">Android</span>
+                        </div>
+                        <div class="tech-icon" data-tooltip="HTML5">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-html5" style="color: #e34f26;"></i>
+                            </div>
+                            <span class="icon-name">HTML5</span>
+                        </div>
+                        <div class="tech-icon" data-tooltip="CSS3">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-css3-alt" style="color: #2965f1;"></i>
+                            </div>
+                            <span class="icon-name">CSS3</span>
+                        </div>
+                        <div class="tech-icon" data-tooltip="JavaScript">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-js" style="color: #f7df1e;"></i>
+                            </div>
+                            <span class="icon-name">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#projects" class="primary-btn">
+                            <span>View Projects</span>
+                            <i class="fas fa-rocket"></i>
+                        </a>
+                        <a href="#contact" class="secondary-btn">
+                            <span>Let's Talk</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <img src="../images/zain.jpg" alt="Developer Profile">
+                        </div>
+                        <div class="experience-badge">
+                            <span>4+</span>
+                            <p>Years<br>Experience</p>
+                        </div>
+                    </div>
+                    <div class="image-shape"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-text">
+                    <p>I  am skilled Android developer with expertise in Java and Kotlin.
+                        Passionate about creating user-friendly and efficient mobile
+                        applications.</p>
+                </div>
+                <div class="about-counters">
+                    <div class="counter-item">
+                        <div class="counter-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="counter-value" data-target="15+">0</div>
+                        <div class="counter-label">Projects</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="counter-value" data-target="5+">0</div>
+                        <div class="counter-label">Clients</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="counter-value" data-target="4+">0</div>
+                        <div class="counter-label">Years</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="counter-value" data-target="3+">0</div>
+                        <div class="counter-label">Awards</div>
+                    </div>
+                </div>
+                <div class="skills-cards">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Dev(Front-End)</h3>
+                        <div class="circular-progress">
+                            <div class="circle-wrap">
+                                <div class="circle">
+                                    <div class="mask full" data-percent="90">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">
+                                        <div class="percent">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Dev</h3>
+                        <div class="circular-progress">
+                            <div class="circle-wrap">
+                                <div class="circle">
+                                    <div class="mask full" data-percent="85">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">
+                                        <div class="percent">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>App Dev</h3>
+                        <div class="circular-progress">
+                            <div class="circle-wrap">
+                                <div class="circle">
+                                    <div class="mask full" data-percent="65">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">
+                                        <div class="percent">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Experience</h2>
+            <div class="education-wrapper">
+                <!-- Academic Education -->
+                <div class="education-group">
+                    <h3 class="group-title">Academic Background</h3>
+                    <div class="education-cards">
+                        <div class="education-card" data-aos="fade-up">
+                            <div class="card-header">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div class="header-content">
+                                    <h4>Bachelor of Computer Science</h4>
+                                    <p class="institution">Mirpur University of Science & Technology ,MUST</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="duration"><i class="far fa-calendar-alt"></i> 2020 - 2024</p>
+                                <p class="grade"><i class="fas fa-star"></i> CGPA: 2.5/4.0</p>
+                                <ul class="highlights">
+                                    <li>Key contributions in different societies of University</li>
+                                
+                                    <li>Lead Developer in Final Year Project</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-header">
+                                <i class="fas fa-school"></i>
+                                <div class="header-content">
+                                    <h4>Intermediate in ICS</h4>
+                                    <p class="institution">Green Model College Chowki (BISE, AJK)</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="duration"><i class="far fa-calendar-alt"></i> 2018 - 2020</p>
+                                <p class="grade"><i class="fas fa-star"></i> Grade: A</p>
+                                <ul class="highlights">
+                                    <li>Student of the Year</li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="education-group">
+                    <h3 class="group-title">Work Experience</h3>
+                    <div class="certifications-grid">
+                        <div class="certification-card" data-aos="fade-up">
+                            <div class="cert-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Android Developer</h4>
+                                <p class="issuer">NetSol Technologies, Lahore</p>
+                                <ul class="cert-details">
+                                    <li>Developed advanced skills in Kotlin, Jetpack Compose, and Dependency Injection (Dagger/Hilt)</li>
+                                    <li>Implemented Google Maps API, Firebase authentication, and real-time database management</li>
+                                    <li>Improved expertise in performance optimization, Clean Architecture, and advanced debugging techniques</li>
+                                </ul>
+                                <div class="cert-footer">
+                                    <span class="date">Jan 2025 - Present</span>
+                                    <div class="view-company"><i class="fas fa-briefcase"></i> Current</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="cert-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Android Developer</h4>
+                                <p class="issuer">Byte Sphere Innovation</p>
+                                <ul class="cert-details">
+                                    <li>Learned Android development fundamentals including Kotlin, MVVM architecture, and Firebase</li>
+                                    <li>Created digital solutions for real-world problems</li>
+                                    <li>Gained experience in UI/UX design principles, debugging, and Android Studio tools</li>
+                                    <li>Collaborated with senior developers on best coding practices</li>
+                                </ul>
+                                <div class="cert-footer">
+                                    <span class="date">May - Aug 2022</span>
+                                    <div class="view-company"><i class="fas fa-history"></i> 3 Months</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Technologies I work with</p>
+            </div>
+
+            <div class="skills-container">
+                <!-- Android Development -->
+                <div class="skill-category">
+                    <h3>Android Development</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <img src="images/skills/kotlin.png" alt="Kotlin" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/06/Kotlin_Icon.svg'">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/java.png" alt="Java" onerror="this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg'">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/android.png" alt="Android" onerror="this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg'">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/firebase.png" alt="Firebase" onerror="this.src='https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg'">
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-text">MVVM</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-text">MVC</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Android Libraries & Tools -->
+                <div class="skill-category">
+                    <h3>Android Libraries & Tools</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <div class="skill-text">Retrofit</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-text">Volley</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-text">Coroutines</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-text">Flow</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/maps.png" alt="Google Maps" onerror="this.src='https://developers.google.com/static/maps/images/maps-icon.svg'">
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-text">View Binding</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-text">Data Binding</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <img src="images/skills/html5.png" alt="HTML5" onerror="this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg'">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/css3.png" alt="CSS3" onerror="this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg'">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/javascript.png" alt="JavaScript" onerror="this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <img src="images/skills/cpp.png" alt="C++" onerror="this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg'">
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/java.png" alt="Java" onerror="this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            
+            <div class="projects-wrapper">
+                <div class="project-bubble active" data-project="1">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="../images/share-square.jpg" alt="Share Square E-commerce App" onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/zaaini/sharsquare-" class="github-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Share Square</h3>
+                            <p>E-commerce solution for both buyers and sellers, featuring location-based services and real-time updates.</p>
+                            <div class="project-tech">
+                                <span>Kotlin</span>
+                                <span>MVVM</span>
+                                <span>Firebase</span>
+                                <span>Google Maps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project-bubble hidden" data-project="2">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="../images/news-app.jpg" alt="News App" onerror="this.src='https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/zaaini/newsapp" class="github-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>News App</h3>
+                            <p>Firebase-based news app with MVVM architecture, allowing users to upload and view news content.</p>
+                            <div class="project-tech">
+                                <span>Kotlin</span>
+                                <span>MVVM</span>
+                                <span>Firebase</span>
+                                <span>Retrofit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project-bubble hidden" data-project="3">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="../images/weather-app.jpg" alt="Weather App" onerror="this.src='https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/zaaini/weather-app" class="github-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Weather App</h3>
+                            <p>Fetches real-time weather data using OpenWeather API with dynamic UI updates based on current conditions.</p>
+                            <div class="project-tech">
+                                <span>Kotlin</span>
+                                <span>Retrofit</span>
+                                <span>OpenWeather API</span>
+                                <span>MVVM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project-bubble hidden" data-project="4">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="../images/quiz-app.jpg" alt="Quiz App" onerror="this.src='https://images.pexels.com/photos/5428833/pexels-photo-5428833.jpeg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/zaaini/quiz-app" class="github-link" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Quiz App</h3>
+                            <p>Interactive quiz application with timer, score tracking, and multiple-choice questions for engaging learning.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Android SDK</span>
+                                <span>SQLite</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="projects-nav">
+                <button class="nav-btn prev-btn" aria-label="Previous project">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn next-btn" aria-label="Next project">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to drop a message!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="item-content">
+                                <h4>Email</h4>
+                                <a href="mailto:your.email@example.com">zainabideencs037@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="item-content">
+                                <h4>Location</h4>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="item-content">
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">03167820761</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/zain-ul-abideen-151a27275/" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/zaaini" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="return handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 zain-ul-abideen@cr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="toast-container"></div>
+
+    <!-- Contact Form JavaScript -->
+    <script>
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Add your EmailJS public key here
+        })();
+
+        const contactForm = document.querySelector('.contact-form');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = this.querySelector('input[name="name"]').value;
+            const email = this.querySelector('input[name="email"]').value;
+            const message = this.querySelector('textarea[name="message"]').value;
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Send email using EmailJS
+            emailjs.send('service_id', 'template_id', { // Add your service and template IDs
+                from_name: name,
+                from_email: email,
+                message: message,
+                to_email: 'zainabideencs037@gmail.com'
+            })
+            .then(function() {
+                showToast('Message sent successfully! I will get back to you soon.', 'success');
+                contactForm.reset();
+            })
+            .catch(function(error) {
+                showToast('Failed to send message. Please try again later.', 'warning');
+                console.error('EmailJS Error:', error);
+            })
+            .finally(function() {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+    </script>
+
+    <!-- Custom JS -->
+    <script>
+        // Toast Notification Function
+        function showToast(message, type = 'info') {
+            const toastContainer = document.querySelector('.toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            
+            let icon;
+            switch(type) {
+                case 'info':
+                    icon = 'info-circle';
+                    break;
+                case 'warning':
+                    icon = 'exclamation-circle';
+                    break;
+                case 'success':
+                    icon = 'check-circle';
+                    break;
+                default:
+                    icon = 'info-circle';
+            }
+
+            toast.innerHTML = `
+                <i class="fas fa-${icon}"></i>
+                <span class="message">${message}</span>
+                <span class="close-btn">
+                    <i class="fas fa-times"></i>
+                </span>
+            `;
+
+            toastContainer.appendChild(toast);
+            
+            // Show toast with animation
+            setTimeout(() => {
+                toast.classList.add('show');
+            }, 10);
+
+            // Add click event to close button
+            const closeBtn = toast.querySelector('.close-btn');
+            closeBtn.addEventListener('click', () => {
+                toast.classList.remove('show');
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            });
+
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                if (toast.parentElement) {
+                    toast.classList.remove('show');
+                    setTimeout(() => {
+                        toast.remove();
+                    }, 300);
+                }
+            }, 5000);
+        }
+
+        // Add click event listeners to certification view buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const certButtons = document.querySelectorAll('.view-cert');
+            
+            certButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showToast('Certifications will be available soon. Please check back later!', 'warning');
+                });
+            });
+        });
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/counter.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/progress.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

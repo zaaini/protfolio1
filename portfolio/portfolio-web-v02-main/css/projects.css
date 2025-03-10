@@ -1,0 +1,273 @@
+/* Projects Section */
+.projects {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(17, 17, 35, 0.98) 0%, rgba(30, 27, 75, 0.98) 100%);
+    overflow: hidden;
+}
+
+.projects .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.projects-wrapper {
+    position: relative;
+    margin: 2rem -1rem;
+    overflow: hidden;
+}
+
+.projects-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+/* Project Card */
+.project-bubble {
+    flex: 0 0 calc(33.333% - 1rem);
+    min-width: 280px;
+    max-width: 350px;
+    aspect-ratio: 3/4;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.project-content {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    height: 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-content:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-content:hover .project-overlay {
+    opacity: 1;
+}
+
+.github-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.github-link:hover {
+    background: #fff;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.project-info {
+    padding: 1.2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.project-info p {
+    color: var(--text-gray);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.project-tech {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tech span {
+    padding: 0.3rem 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    color: var(--text-gray);
+    font-size: 0.75rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.project-tech span:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* Navigation */
+.projects-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.nav-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Progress Dots */
+.progress-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .project-bubble {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 992px) {
+    .projects {
+        padding: 3rem 0;
+    }
+    
+    .project-bubble {
+        min-width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-wrapper {
+        margin: 1.5rem -0.5rem;
+    }
+    
+    .projects-track {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+    
+    .project-bubble {
+        flex: 0 0 calc(100% - 1rem);
+        min-width: 240px;
+    }
+    
+    .project-info h3 {
+        font-size: 1rem;
+    }
+    
+    .project-info p {
+        font-size: 0.8rem;
+    }
+    
+    .project-tech span {
+        padding: 0.25rem 0.6rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 2rem 0;
+    }
+    
+    .project-bubble {
+        min-width: 220px;
+    }
+    
+    .project-image {
+        height: 35%;
+    }
+    
+    .project-info {
+        padding: 1rem;
+    }
+    
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .github-link {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+}
